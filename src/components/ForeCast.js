@@ -28,7 +28,7 @@ const Forecast = ({ lat, lon }) => {
         const minutes = date.getMinutes();
         const ampm = hours >= 12 ? 'PM' : 'AM';
         const formattedHours = (hours % 12) || 12;
-        return ` ${formattedHours}:${minutes} ${ampm}`;
+        return ` ${formattedHours} ${ampm}`;
     };
 
     const uniqueDays = Array.from(
@@ -84,7 +84,7 @@ const Forecast = ({ lat, lon }) => {
                                         <p className='cards-temperature'>{(element.main.temp - 273.15).toFixed(0)}° C</p>
                                     
                                     </span>
-                                    <p>{formatDate(element.dt_txt)}</p>
+                                    <p className='mb-2'>{formatDate(element.dt_txt)}</p>
                                     {(() => {
                                         const iconSet = Icons.find((iconSet) => iconSet.title === weatherIcon);
                                         const icon = iconSet.weather.find((icon) => icon.name === weatherType) || iconSet.weather.find((icon) => icon.name === "Mist");
