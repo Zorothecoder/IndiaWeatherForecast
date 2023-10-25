@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/IndiaWeatherForecast/static/css/main.a047a9d5.css",
-    "main.js": "/IndiaWeatherForecast/static/js/main.7302ad6e.js",
+    "main.js": "/IndiaWeatherForecast/static/js/main.acf62123.js",
     "static/js/787.2a38e5c6.chunk.js": "/IndiaWeatherForecast/static/js/787.2a38e5c6.chunk.js",
     "static/media/sky_background.jpg": "/IndiaWeatherForecast/static/media/sky_background.fe6cd0d8bcd5c44cd7c0.jpg",
     "index.html": "/IndiaWeatherForecast/index.html",
     "main.a047a9d5.css.map": "/IndiaWeatherForecast/static/css/main.a047a9d5.css.map",
-    "main.7302ad6e.js.map": "/IndiaWeatherForecast/static/js/main.7302ad6e.js.map",
+    "main.acf62123.js.map": "/IndiaWeatherForecast/static/js/main.acf62123.js.map",
     "787.2a38e5c6.chunk.js.map": "/IndiaWeatherForecast/static/js/787.2a38e5c6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a047a9d5.css",
-    "static/js/main.7302ad6e.js"
+    "static/js/main.acf62123.js"
   ]
 }
