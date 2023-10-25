@@ -48,10 +48,7 @@ const Weather = () => {
     const getCurrentTime = () => {
         const now = new Date();
         const hours = now.getHours();
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        const ampm = hours >= 12 ? 'PM' : 'AM';
-        const formattedHours = (hours % 12) || 12; // Convert 0 to 12 in 12-hour format
-        return ` ${formattedHours}:${minutes} ${ampm}`;
+        return `${hours}`;
     }
 
     function getCurrentDay() {
@@ -89,7 +86,7 @@ const Weather = () => {
                             const weatherType = weatherData.weather[0].main
                             if (getCurrentTime() >= 6 && getCurrentTime() < 18) {
                                 const weatherIcon = Icons.find(iconSet => iconSet.title === "Day");
-                                const icon = weatherIcon.weather.find(icon => icon.name === weatherType);
+                                const icon = weatherIcon.weather.find(icon => icon.name === weatherType) || weatherIcon.weather.find(icon => icon.name === "Mist");
                                 return icon ? (
                                     <img src={process.env.PUBLIC_URL + '/' + icon.url} alt={icon.name} />
                                 ) : (
